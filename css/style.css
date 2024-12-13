@@ -1,0 +1,289 @@
+/* Estrutura Básica */
+
+/* Reset e Fonte Padrão */
+body,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: #edf1ee;
+  text-decoration: none;
+}
+
+/* Centro e Fundo */
+.center {
+  margin: 0 auto;
+}
+
+.back_image {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Menu */
+#menu {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.item_menu {
+  width: 200px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+  color: #66ff66;
+  padding: 20px 0;
+  transition: color 0.3s;
+}
+
+.item_menu:hover {
+  color: #ec0707;
+  cursor: pointer;
+}
+
+/* Cabeçalho (Header) */
+#logo {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#header {
+  width: 100%;
+  height: 700px;
+  background-image: url(../imagens/image3.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+#caixa_header {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#slogan,
+#mensagen {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  font-family: Verdana, sans-serif;
+  color: #050505;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+#mensagen {
+  width: 800px;
+  padding: 20px 0;
+}
+
+/* Botões e Inputs */
+.valor {
+  margin: 10px 0;
+  height: 50px;
+  width: 50%;
+  font-size: 1em;
+}
+
+.botao {
+  width: 150px;
+  height: 50px;
+  background-color: #91f791;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1em;
+  margin-left: 250px;
+  line-height: 1;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.botao:hover {
+  background-color: #000;
+  color: #eaf1e5;
+}
+
+/* Seções e Quadros de Produto */
+
+/* Empresa e Caixa de Produtos */
+#empresa {
+  width: 100%;
+  min-height: 600px;
+  background-color: #f3b33c;
+}
+
+#caixa_empresa {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.titulo {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.titulo h1,
+.titulo span {
+  font-family: "Arial", sans-serif;
+  font-size: 4em;
+  color: #66ff66;
+}
+
+.titulo span {
+  font-family: "Anton", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #473805;
+}
+
+.conteudo,
+.historico,
+.produtos {
+  width: 100%;
+  min-height: 350px;
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+
+.caixa_produto {
+  width: 250px;
+  height: auto; /* Remover altura fixa */
+  margin: 20px;
+  float: left;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caixa_produto:hover {
+  transform: scale(1.05);
+}
+
+.caixa_titulo {
+  background-color: #916c06;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px; /* Ajustar padding para centralizar verticalmente */
+  width: 100%; /* Garantir que ocupe toda a largura */
+}
+
+.caixa_imagem {
+  width: 100%; /* Ajustar largura para alinhar com o título */
+  padding: 10px 0; /* Espaçamento entre o título e a imagem */
+  display: flex;
+  justify-content: center; /* Centralizar a imagem */
+}
+
+.caixa_imagem img {
+  width: 100%;
+  height: auto;
+  max-width: 180px; /* Ajuste opcional para limitar o tamanho da imagem */
+}
+
+.caixa_texto {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  width: 90%; /* Definir largura para centralizar a descrição */
+}
+
+/* Rodapé */
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  text-align: center;
+  color: #000000;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+#caixa_footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: #e4e0e1;
+}
+
+/* Outros elementos */
+.item_servico {
+  width: 500px;
+  float: left;
+  margin: 20px;
+}
+
+.seta {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+}
+
+/* Responsividade e Media Queries */
+.conteudo {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os quadros quebrem em várias linhas */
+  justify-content: space-between; /* Distribui o espaço entre os quadros */
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+
+.caixa_produto {
+  width: calc(
+    25% - 30px
+  ); /* Ajuste para 4 produtos por linha com espaçamento */
+  margin: 15px; /* Espaçamento entre os quadros */
+  box-shadow: 8px 3px 3px rgb(168, 114, 13);
+  transition: transform 0.3s;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .caixa_produto {
+    width: calc(50% - 30px); /* 2 produtos por linha em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .caixa_produto {
+    width: calc(100% - 30px); /* 1 produto por linha em telas muito pequenas */
+  }
+}
+
+.informacoes {
+  display: flex; /* Usar Flexbox para alinhamento */
+  justify-content: space-between; /* Espaço entre os elementos */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 10px; /* Espaçamento ao redor */
+}
+
+.status,
+.especie {
+  font-size: 16px; /* Tamanho da fonte */
+  color: #333; /* Cor do texto */
+}
